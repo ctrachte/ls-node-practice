@@ -12,7 +12,7 @@
 
 
 module.exports.mkdir = (name) => {
-	var dir = './name';
+	var dir = `./${name}`;
 
 	if (!fs.existsSync(dir)){
 	    fs.mkdirSync(dir);
