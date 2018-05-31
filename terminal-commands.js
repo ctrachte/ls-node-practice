@@ -11,7 +11,7 @@
  };
 
 
-module.exports.touch = (name) => {
+module.exports.mkdir = (name) => {
 	var dir = './name';
 
 	if (!fs.existsSync(dir)){
@@ -19,7 +19,9 @@ module.exports.touch = (name) => {
 	}
 };
 
-module.exports.mkdir = (name) => {
-    fs.open('name');
-    console.log(`opened ${name}`);
+module.exports.touch = (name) => {
+	fs.appendFile(name, function (err) {
+	  if (err) throw err;
+	  console.log('new file created! ' + name);
+	});
 };
