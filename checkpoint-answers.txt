@@ -1,0 +1,19 @@
+How do you import a module?
+- by writing using the `require` statement and assigning it to a variable.
+
+What JavaScript statement do you use to export a module?
+module.exports.[module name]
+
+Online Research Questions
+Are there other ways to export a module?
+- Yes, using the following syntax:
+```
+module.exports.SimpleMessage = 'Hello world';
+```
+What are ES6 modules and how do they differ from the module we created in this checkpoint?
+- ES6 modules are another way of exporting re-usable blocks of code without wrapping them in a closure or object
+- they are different in that: 
+ 1.)You can easily load ES6 modules asynchronously.
+ 2.)You get compile time errors if you try to import something that has not been exported.
+
+This was a tricky question, and I had some trouble understanding the differences to be honest. Please provide me with any additional explanations. Thanks!
